@@ -1,1 +1,3 @@
-export const HelloWorld = (name: string) => `Hello ${name}`; 
+
+
+export * from './lib/count'
