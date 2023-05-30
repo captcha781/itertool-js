@@ -7,3 +7,10 @@ test('Count Test: 01', () => {
 test('Count Test: 02', () => {
     expect(count(1, 2, 10)).toStrictEqual([1, 3, 5, 7, 9])
 })
+
+test('Count Test: 03', () => {
+    expect(count(1, 2, 10, (arr) => {
+        console.log(arr.join(""))
+        return true
+    })).toBe(true)
+})
