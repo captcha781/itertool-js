@@ -9,3 +9,7 @@ export interface Count {
 export interface Cycle {
     (iterable:string, end: number, cb?: CallbackInfinite):string[]|[]|[string]
 }
+
+export interface Repeat {
+    (item:any, times: number, cb?: CallbackInfinite):any[]
+}
